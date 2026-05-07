@@ -59,6 +59,16 @@ export const envSchema = z
       .string()
       .regex(/^(\d{1,4}\.\d{1,4}\.\d{1,4}).*/, "SERVICE_VERSION is not formatted semantically")
       .default(""),
+    /**
+     * The Phoenix OTEL collector endpoint for tracing
+     *
+     * @example "http://localhost:6006"
+     */
+    PHOENIX_COLLECTOR_ENDPOINT: z.string().url().default(""),
+    /**
+     * The Phoenix API key for authentication (required for Phoenix Cloud)
+     */
+    PHOENIX_API_KEY: z.string().default(""),
   })
   .loose();
 
