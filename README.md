@@ -1,3 +1,6 @@
+> [!Caution]
+> This repository is archived and has been superseded by the CRDC Submission Portal mono repository: [crdc-datahub-codebase](https://github.com/CBIIT/crdc-datahub-codebase).
+
 # Introduction
 
 This project provides the base implementation for a serverless question-answering system using AWS Bedrock and a Knowledge Base (KB). It handles incoming questions, retrieves relevant context from the KB, and generates answers using the Converse API.
